@@ -1,22 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 1</title>
-    <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASM HTML CSS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <img class="logo" src="https://fpt.edu.vn/Content/images/assets/Poly.png" alt="logo" />
-    <hr />
-    <nav>
-        <ul class="menu-list">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="./bai tho.html">Bai tho</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+  <header>
+    <nav class="container">
+      <img class="logo" src="./images/logo.png" alt="Logo" />
+      <ul class="menu-list">
+        <li><a href="#" class="menu-link">Features</a></li>
+        <li><a href="#" class="menu-link">About Us</a></li>
+        <li><a href="#" class="menu-link">Blog</a></li>
+        <li><a href="#" class="menu-link btn-login">Login</a></li>
+      </ul>
     </nav>
-    <hr />
+  </header>
+  <main>
+    <!-- hero banner -->
+    <section class="hero container">
+      <h1 class="title">
+        A powerful solution to grow your startup. Fast!
+      </h1>
+      <p class="desc">Organise, collaborate, and track progress seamlessly with our one-stop-shop startup growth
+        tool.</p>
+      <div class="btn-group">
+        <botton class="btn btn-get">Get Started</botton>
+        <botton class="btn btn-book"><img src="images/Frame.png">Book a demo</botton>
+      </div>
+    </section>
+    <!--video section-->
+    <section class="video bg-black">
+      <div class="container-sm">
+        <h2 class="video-heading text-xl text-center">
+          See how it works and get started in less than 2 minutes
+        </h2>
+        <div class="video-content">
+          <a href="#">
+            <img src="images/video-preview.png" alt="video" class="video-preview" />
+          </a>
+
+          <a href="#" class="btn btn-primary">Get Started</a>
+        </div>
+      </div>
+    </section>
+    <hr color="#494949" height="1px">
+    <!--testimonials-->
+    
+    <section class="testimonials bg">
+      <div class="container-bg">
+        <h3 class="testimonials-heading">
+          Don't just take our word for it, see the success stories from
+          businesses just like yours.
+        </h3>
+        <div class="testimonials-grid">
+          <div class="card">
+            <p>
+              “Our business has seen a significant increase in productivity
+              since we started using the Growth app.”
+            </p>
+
+            <p>Katherine Smith</p>
+            <p>Capodopera</p>
+          </div>
+
+          <div class="card">
+            <p>
+              “As a small business owner, it's important to have a tool that can
+              help me keep track of everything. The Growth app has been a
+              lifesaver for me, allowing me to manage my contacts, schedule
+              appointments, and track progress all in one place..”
+            </p>
+
+            <p>Johnathan Lee</p>
+            <p>Red Bolt</p>
+          </div>
+
+          <div class="card">
+            <p>
+              “The dashboards and reporting feature has provided valuable
+              insights into our performance and helped us make data-driven
+              decisions. It's a game changer for us.”
+            </p>
+
+            <p>David Wilson</p>
+            <p>Slide</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="index.html">
+              <img src="images/logo-white.png" alt="logo" />
+            </a>
+            <div class="card">
+              <h3>Subscribe to Newsletter</h3>
+              <p class="text-sm">
+                Subscribe now to receive tips on how to take your business to
+                the next level.
+              </p>
+              <form>
+                <input type="email" id="email" placeholder="Enter your email" />
+                <button type="submit" class="btn btn-primary btn-block">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+            <img src="images/Component 1.png" alt="IN">
+            <img src="images/Component 3.png" alt="logo twitter">
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Process</a></li>
+              <li><a href="#">Join Our Team</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">Recent Projects</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul>
+              <li>
+                <a href="#">hello@growthapp.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
+
 </html>

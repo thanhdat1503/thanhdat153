@@ -1,39 +1,247 @@
-body {
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
+/*Reset CSS*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  ul {
+    list-style: none;
   }
   
   a {
-    /* bo gach chan the  */
     text-decoration: none;
   }
   
+  header {
+    padding-bottom: 72px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+  }
+  
   .logo {
-    display: flex;
-    justify-content: center;
+    width: 123px;
+    height: 32px;
   }
-  
-  .logo-img {
-    width: 200px;
-    /* text-align: center; */
-  }
-  
   .menu-list {
-    list-style: none;
-    font-size: 22px;
     display: flex;
-    gap: 24px;
+    gap: 40px;
+  }
+  
+  .menu-link {
+    color: #131316;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .btn-login {
+    padding: 12px 24px;
+    border-radius: 12px;
+    background-color: #f5f5f5;
+  }
+  
+  .link:hover,
+  .btn-login:hover {
+    color: #4891ff;
+    opacity: 0.8;
+    transition: 0.5s;
+  }
+  /*hero*/
+  
+  .container {
+    max-width: 1248px;
+    margin: 0 auto;
+  }
+  
+  .hero {
+    background-image: url("./images/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 650px;
+    margin-bottom: 75px;
+  }
+  
+  .title {
+    color: #131316;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: -2px;
+    max-width: 824px;
+    padding-bottom: 24px;
+  }
+  
+  .desc {
+    color: #131316;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 32px */
+    max-width: 611px;
+    padding-bottom: 40px;
+  }
+  
+  .btn-group {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .btn {
+    border-radius: 16px;
+    padding: 16px 32px;
     justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
   }
-  h2{
-    color:blue;
+  
+  .btn-get {
+    background: #4891FF;
+    color: #FFF;
   }
-  em{
-    color:green;
+  
+  .btn-book {
+    background: #F5F5F5;
+    color: #131316;
   }
-  strong{
-    color:red;
+  
+  /*video*/
+  .video {
+    padding: 10px 0 40px;
   }
-  b{
-    color:orangered;
+  
+  .video .video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .video .video-preview {
+    margin-bottom: 20px;
+  }
+  
+  .bg-black {
+    background: #131316;
+  }
+  
+  .text-center {
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    /* 57.6px */
+    letter-spacing: -1px;
+    max-width: 767px;
+    max-height: 118px;
+    margin: 0 auto;
+    padding-top: 96px;
+  }
+  .btn-primary{
+    display: inline-flex;
+  padding: 8px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  background: #4891FF;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+  }
+  .video-preview {
+    padding-top: 44px;
+    padding-bottom: 64px;
+  }
+  /*testimonials*/
+  .testimonials {
+    padding: 40px 0;
+    background: #131316;
+   
+  }
+  
+  .testimonials .testimonials-heading {
+    width: 700px;
+    margin-bottom: 40px;
+    color:#FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -1px;
+    padding-left: 85px;
+    padding-top: 96px;
+  }
+  
+  .testimonials .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-left: 85px;
+    padding-top: 65.37px;
+  }
+  
+  .testimonials .card p:nth-child(2) {
+    margin-top: 30px;
+    font-weight: bold;
+    
+  }
+  .card {
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+   
+  }
+  /*footer*/
+  .footer{
+    padding:40px 0;
+    background: #131316;
+  }
+  .footer h4{
+    margin-block:10px;
+    color:#DFDEE2;
+  }
+  .footer h3{
+    margin-block: 10px;
+  }
+  .footer ul li {
+    line-height: 2.5;
+  }
+  a{
+    color:#BCC2C3;
+  }
+  .footer i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .card {
+    margin: 20px 30px 30px 0;
+  }
+  #email{
+    border:1px solid #BEBDC6;
+    padding: 12px 24px 12px 12px;
+    border-radius: 8px;
   }
